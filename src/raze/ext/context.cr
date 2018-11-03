@@ -4,7 +4,7 @@ class HTTP::Server
 
     macro finished
       alias StoreTypes = Union({{ *TYPE_MAP }})
-      getter params = {} of String => StoreTypes
+      getter params = {} of String => String
       getter state = {} of String => StoreTypes
     end
 
